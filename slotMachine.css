@@ -1,0 +1,97 @@
+/* salvar como slotMachine.css*/
+#janela1, #janela2, #janela3 {
+	width: 150px;
+	height:150px;
+	margin: 0 20px  20px;
+	border:1px solid red;
+	border-radius: 10px;
+	box-shadow: 3px 3px 10px black;
+  float:left;
+  overflow: hidden;
+}
+input{
+  margin: 0px 0 20px;
+}
+#janela1 img, #janela2 img, #janela3 img  {
+	width:150px; 
+	height:150px;
+  box-shadow: inset 0px 0px 20px 5px #000;
+}
+.subindo {
+  animation-name: subindo;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+}
+@keyframes subindo {
+  from {left:0px; top:0px;}
+  to {left: 0px;top:-1085px;}
+}
+
+#fileira1, #fileira2, #fileira3 {
+	width:150px;
+	height:1200px;
+	margin-top:5px;
+	margin-bottom:10px;
+	position:relative;
+	top:0px;
+	left:0px;
+}
+body {
+	background:url(https://cdn.pixabay.com/photo/2015/01/18/13/34/gambling-602976_1280.jpg);
+	background-size:cover;
+}
+
+#areaJogo {
+	margin:0px auto;
+	margin-top:50px;
+	width:580px;
+	background: linear-gradient(rgba(135, 236, 240, 0.6),rgba(100, 100, 100, 0.781));
+	border:4px outset silver;
+  text-align: center;
+}
+
+input{
+	color: white;
+	background-color: red;
+	width: 60px;
+	height: 60px;
+	margin: 30px 10px;
+	position: relative;
+	box-sizing: border-box;
+	box-shadow: 2px 2px 3px black;
+	cursor: pointer;
+	transition: all 400ms ease;
+	overflow: hidden;
+}
+
+input:before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	background-color: rgb(255, 0, 0);
+	z-index: -1;
+	transition: 10s ease;
+}
+.botao:before{
+	width: 0;
+	height: 100%;
+}
+.botao:hover:before{
+	width: 100%;
+	background-color: rgb(110, 0, 0);
+}
+
+.botaoJogar{
+	color: white;
+	background: red;
+	border-radius: 50px;
+	width: 60px;
+	height: 60px;
+	margin-left: 220px;
+	box-shadow: 2px 2px 3px black;
+}
+/* #areaCartas { margin-left:50px;} */

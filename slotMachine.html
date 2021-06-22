@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>JavaScript Slot Machine</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="slotMachine.css">
+		<script src="slotMachine.js"></script>
+	</head>
+	<body>
+		<div id="areaJogo">
+		   <h1>JavaScript Slot Machine</h1>
+		   <div id="resultado"></div>
+		   <div id="areaCartas">
+				<div id="janela1">
+					<div id="fileira1">
+						<img id="imagemFileira1" src="imgs/joker.png">
+					</div>
+				</div>
+
+				<div id="janela2">
+					<div id="fileira2">
+						<img id="imagemFileira2" src="imgs/joker.png">
+					</div>
+				</div>
+
+				<div id="janela3">
+					<div id="fileira3">
+						<img id="imagemFileira3" src="imgs/joker.png">
+					</div>
+				</div>
+			</div>
+			<div style="clear: both;"></div>
+			<input type="button" value="R$50" onclick="Escolher()" class="botao">
+			<input type="button" value="R$100" onclick="Escolher()" class="botao">
+			<input type="button" value="Tudo" onclick="Escolher()" class="botao">
+			<input type="button" value="JOGAR" onclick="Jogar()" class="botaoJogar">
+		</div>
+		
+    </body>
+</html>
